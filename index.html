@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados de RNA-Seq</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">TranscriptomicsSeqDB</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="searchpage.html">Banco de Dados</a></li>
+                    <li><a href="tools.html">Ferramentas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <h2>Bem-vindo ao banco de dados</h2>
+            <p>Pesquise e visualize sequências de RNA com facilidade.</p>
+            <form action="searchpage.html" method="GET">
+                <input type="text" name="search" id="search-bar" placeholder="Pesquisar dados genômicos...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Recursos:</h2>
+            <div class="feature">
+                <img src="src/search.png" alt="Ícone de pesquisa">
+                <h3>Pesquisa</h3>
+                <p>Pesquise por sequências de RNA através de palavras-chave ou códigos de identificação.</p>
+            </div>
+            <div class="feature">
+                <img src="src/view.png" alt="Ícone de visualização">
+                <h3>Visualização</h3>
+                <p>Visualize estruturas em cadeia de RNA com as ferramentas de visualização.</p>
+            </div>
+            <div class="feature">
+                <img src="src/analysis.png" alt="Ícone de análise">
+                <h3>Análise</h3>
+                <p>Estude sequências com as ferramentas de análise.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a target="_blank" href="https://propes.ufabc.edu.br/a-propes/nucleos-estrategicos/interagro" id="icon">Desenvolvido para o InterAGRO - UFABC</a>
+            <p>&copy; 2024</p>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>

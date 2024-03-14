@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados de RNA-Seq</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">TranscriptomicsSeqDB</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="searchpage.html">Banco de Dados</a></li>
+                    <li><a href="tools.html">Ferramentas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="filters">
+        <div class="container">
+            <form action="#" method="GET">
+                <select name="type">
+                    <option value="">Tipo</option>
+                    <option value="rRNA">rRNA</option>
+                    <option value="protein_coding">Protein Coding</option>
+                    <option value="misc_RNA">Misc RNA</option>
+                </select>
+                <select name="chromossome">
+                    <option value="">Cromossomo</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="22">22</option>
+                    <option value="25">25</option>
+                </select><br>
+                <input type="text" name="search" id="search-bar" placeholder="Pesquisar dados genômicos...">
+            </form>
+        </div>
+    </section>
+
+    <div class="result-buttons">
+        <button id="btn-5-results">5 Results</button>
+        <button id="btn-30-results">30 Results</button>
+        <button id="btn-50-results">50 Results</button>
+        <button style="background-color: pink;" id="btn-100-results">(essa parte ta em desenvolvimento, ignore)</button>
+      </div>
+
+    <section id="results">
+        <div class="container">
+            <h2>Resultados da pesquisa:</h2>
+            <ul>
+                <li>Results will</li>
+                <li>Be shown</li>
+                <li>Like this</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a target="_blank" href="https://propes.ufabc.edu.br/a-propes/nucleos-estrategicos/interagro" id="icon">Desenvolvido para o InterAGRO - UFABC</a>
+            <p>&copy; 2024</p>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>

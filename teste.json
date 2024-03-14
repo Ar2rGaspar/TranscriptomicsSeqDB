@@ -1,0 +1,104 @@
+{
+    "gene": [
+      {
+        "id": 1,
+        "feature_id": "5_8S_rRNA (22 57711376..57711516)",
+        "ensembl_id": "ENSBTAG00000040416",
+        "name": "5_8S_rRNA",
+        "type": "rRNA",
+        "chromosome": "22",
+        "start_bp": 57711377,
+        "end_bp": 57711516
+      },
+      {
+        "id": 2,
+        "feature_id": "5S_rRNA (1 124790930..124791039)",
+        "ensembl_id": "ENSBTAG00000043802",
+        "name": "5S_rRNA",
+        "type": "rRNA",
+        "chromosome": "1",
+        "start_bp": 124790931,
+        "end_bp": 124791039
+      },
+      {
+        "id": 3,
+        "feature_id": "5S_rRNA (1 147136867..147136983)",
+        "ensembl_id": "ENSBTAG00000030775",
+        "name": "PCBP3",
+        "type": "protein_coding",
+        "chromosome": "1",
+        "start_bp": 147136868,
+        "end_bp": 147136983
+      },
+      {
+        "id": 4,
+        "feature_id": "7SK (5 99553714..99554036)",
+        "ensembl_id": "ENSBTAG00000042107",
+        "name": "7SK",
+        "type": "misc_RNA",
+        "chromosome": "5",
+        "start_bp": 99553715,
+        "end_bp": 99554036
+      },
+      {
+        "id": 5,
+        "feature_id": "ABHD10",
+        "ensembl_id": "ENSBTAG00000004601",
+        "name": "ABHD10",
+        "type": "protein_coding",
+        "chromosome": "1",
+        "start_bp": 57156326,
+        "end_bp": 57169463
+      },
+      {
+        "id": 6,
+        "feature_id": "ABHD11",
+        "ensembl_id": "ENSBTAG00000010339",
+        "name": "ABHD11",
+        "type": "protein_coding",
+        "chromosome": "25",
+        "start_bp": 34041448,
+        "end_bp": 34043848
+      },
+      {
+        "id": 7,
+        "feature_id": "12S_rRNA (2 234567890..234567999)",
+        "ensembl_id": "ENSBTAG00000012345",
+        "name": "12S_rRNA",
+        "type": "rRNA",
+        "chromosome": "2",
+        "start_bp": 234567891,
+        "end_bp": 234567999
+    },
+    {
+        "id": 8,
+        "feature_id": "16S_rRNA (3 345678901..345679010)",
+        "ensembl_id": "ENSBTAG00000054321",
+        "name": "16S_rRNA",
+        "type": "rRNA",
+        "chromosome": "3",
+        "start_bp": 345678902,
+        "end_bp": 345679010
+    },
+    {
+        "id": 9,
+        "feature_id": "23S_rRNA (4 456789012..456789121)",
+        "ensembl_id": "ENSBTAG00000067890",
+        "name": "23S_rRNA",
+        "type": "rRNA",
+        "chromosome": "4",
+        "start_bp": 456789013,
+        "end_bp": 456789121
+    },
+    {
+        "id": 10,
+        "feature_id": "28S_rRNA (5 567890123..567890232)",
+        "ensembl_id": "ENSBTAG00000098765",
+        "name": "28S_rRNA",
+        "type": "rRNA",
+        "chromosome": "5",
+        "start_bp": 567890124,
+        "end_bp": 567890232
+    }
+    ]
+  }
