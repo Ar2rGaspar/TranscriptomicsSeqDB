@@ -5,7 +5,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('search-bar').value = searchQuery;
         filterData();
     }
-}); 
+});
+
+const jsonFilePath = 'teste.json';
+let jsonData = null;
+let filteredData = [];
+
+function fetchJsonData(filePath) {
+  return fetch(filePath)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network error');
+      }
+      return response.json();
+    })
+    .catch(error => {
+      console.error('Fetch error:', error);
+    });
+}
+
+fetchJsonData(jsonFilePath).then(data => {
+  jsonData = data;
+  filterData();
+});
 
 const searchInput = document.getElementById('search-bar');
 const typeSelect = document.querySelector('select[name="type"]');
@@ -13,23 +35,27 @@ const chromosomeSelect = document.querySelector('select[name="chromossome"]');
 const resultsContainer = document.getElementById('results');
 
 function filterData() {
-  const searchTerm = searchInput.value.toLowerCase();
-  const selectedType = typeSelect.value;
-  const selectedChromosome = chromosomeSelect.value;
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedType = typeSelect.value;
+    const selectedChromosome = chromosomeSelect.value;
 
-  fetch(`http://localhost:3000/data?search=${searchTerm}&type=${selectedType}&chromosome=${selectedChromosome}`)
-      .then(response => {
-          if (!response.ok) {
-              throw new Error('Network error');
-          }
-          return response.json();
-      })
-      .then(data => {
-          displayResults(data, 50);
-      })
-      .catch(error => {
-          console.error('Fetch error:', error);
-      });
+    if (jsonData) {
+        filteredData = jsonData.gene.filter(gene => {
+          return (
+            gene.name.toLowerCase().includes(searchTerm) ||
+            gene.type.toLowerCase().includes(searchTerm) ||
+            gene.chromosome.toLowerCase().includes(searchTerm) ||
+            gene.feature_id.toLowerCase().includes(searchTerm) ||
+            gene.ensembl_id.toLowerCase().includes(searchTerm)
+          ) && (
+            selectedType ? gene.type === selectedType : true
+          ) && (
+            selectedChromosome ? gene.chromosome === selectedChromosome : true
+          );
+        });
+    
+        displayResults(filteredData, 5);
+    }
 }
 
 function displayResults(data, limit) {
