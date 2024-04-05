@@ -28,9 +28,18 @@
             <form action="#" method="GET">
                 <select name="type">
                     <option value="">Tipo</option>
-                    <option value="rRNA">rRNA</option>
-                    <option value="protein_coding">Protein Coding</option>
+                    <option value="blastocyst">Blastocyst</option>
+                    <option value="embryo">Embryo</option>
+                    <option value="miRNA">Micro RNA</option>
                     <option value="misc_RNA">Misc RNA</option>
+                    <option value="Mt_rRNA">Mitochondrial Ribosomal RNA</option>
+                    <option value="Mt_tRNA">Mitochondrial Transfer RNA</option>
+                    <option value="processed_pseudogene">Processed Pseudogene</option>
+                    <option value="protein_coding">Protein Coding</option>
+                    <option value="pseudogene">Pseudogene</option>
+                    <option value="rRNA">Ribosomal RNA</option>
+                    <option value="snRNA">Small Nuclear RNA</option>
+                    <option value="snoRNA">Small Nucleolar RNA</option>
                 </select>
                 <select name="chromossome">
                     <option value="">Cromossomo</option>
@@ -39,8 +48,38 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
                     <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
                     <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="GJ058256.1">GJ058256.1</option>
+                    <option value="GJ058729.1">GJ058729.1</option>
+                    <option value="GJ059463.1">GJ059463.1</option>
+                    <option value="GJ060027.1">GJ060027.1</option>
+                    <option value="MT">Mitochondria</option>
+                    <option value="X">X</option>
+                </select>
+                <select name="speed">
+                    <option value="">Velocidade</option>
+                    <option value="fast">Fast</option>
+                    <option value="in vivo">In vivo</option>
+                    <option value="slow">Slow</option>
                 </select><br>
                 <input type="text" name="search" id="search-bar" placeholder="Pesquisar dados genômicos...">
             </form>
@@ -48,10 +87,11 @@
     </section>
 
     <div class="result-buttons">
-        <button id="btn-5-results">5 Results</button>
-        <button id="btn-30-results">30 Results</button>
-        <button id="btn-50-results">50 Results</button>
-        <button style="background-color: pink;" id="btn-100-results">(essa parte ta em desenvolvimento, ignore)</button>
+        <button id="btn-20-results">20 resultados</button>
+        <button id="btn-100-results">100 resultados</button>
+        <button id="btn-500-results">500 resultados</button>
+        <button id="previous-page">&lArr;</button>
+        <button id="next-page">&rArr;</button>
       </div>
 
     <section id="results">
@@ -61,6 +101,14 @@
             </ul>
         </div>
     </section>
+
+    <div class="result-buttons">
+        <button id="btn-20-results">20 resultados</button>
+        <button id="btn-100-results">100 resultados</button>
+        <button id="btn-500-results">500 resultados</button>
+        <button id="previous-page">&lArr;</button>
+        <button id="next-page">&rArr;</button>
+      </div>
 
     <footer>
         <div class="container">

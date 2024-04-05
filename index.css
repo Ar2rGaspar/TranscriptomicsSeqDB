@@ -145,13 +145,22 @@ select {
 .result-buttons {
     text-align: center;
     margin-top: 20px;
-    position: relative;
-    z-index: 10;
 }
-  
-  .result-buttons button {
+
+.result-buttons button {
     margin: 0 10px;
-    padding: 5px 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #069b89;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result-buttons button:hover {
+    background-color: #28af9f;
 }
 
 .feature {
@@ -235,3 +244,66 @@ footer p {
 #icon {
     color: #00ffc8;
 }
+
+/* MODALS */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    background-color: #293f38;
+    color: rgb(134, 228, 197);
+}
+
+#detail-modal {
+    max-width: 800vw;
+    max-height: 600vh;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+/* LIST ITEMS */
+
+  .list-item {
+    margin-bottom: 10px;
+  }
+  .list-item-text {
+    margin-bottom: 5px;
+  }
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  .list-item button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .list-item button:hover {
+    background-color: #45a049;
+  }
