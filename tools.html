@@ -10,14 +10,15 @@
 <body>
     <header>
         <div class="container">
+            <a href="index.html"><img src="src/logo.png" alt="BioLogo" id="logo"></a>
             <h1><a href="index.html">TranscriptomicsSeqDB</a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Página Inicial</a></li>
                     <li><a href="searchpage.html">Banco de Dados</a></li>
                     <li><a href="tools.html">Ferramentas</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,35 +27,38 @@
     <section id="tool-list">
         <div class="container">
             <h2>Lista de ferramentas integradas:</h2>
-            <div class="tools-container"> <!-- New container for flex items -->
+            <div class="tools-container">
                 <div class="tool">
                 <img src="src/tool-vep.jpg" alt="PLACEHOLDER">
                 <h3><a target="_blank" href="https://www.ensembl.org/info/docs/tools/vep/index.html">Ensembl Variant Effect Predictor (VEP)</a></h3>
-                <p>Análise de variantes genéticas em genes, transcritos e sequências proteicas</p>
+                <p>Análise de variantes genéticas em genes, transcritos e sequências proteicas.</p>
+                <p>Para utilizar o VEP, selecione um gene aplicável ao VEP no Banco de Dados e selecione "Queue on VEP".</p>
                 </div>
                 <div class="tool">
                     <img src="src/tool-beavr.png" alt="PLACEHOLDER">
                     <h3><a target="_blank" href="https://github.com/developerpiru/BEAVR">BEAVR</a></h3>
                     <p>Facilita a visualização de dados em sequenciamento</p>
+                    <p>Em desenvolvimento...</p>
                 </div>
                 <div class="tool">
                     <img src="src/tool-limma.png" alt="PLACEHOLDER">
                     <h3><a target="_blank" href="https://bioconductor.org/packages/release/bioc/html/limma.html">Limma do Bioconductor</a></h3>
                     <p>Pacote estático para análise de dados de expressão genética</p>
+                    <p>Utilize a ferramenta <a class="golden" href="limma.html">aqui.</a></p>
                 </div>
                 <div class="tool">
                     <img src="src/analysis.png" alt="PLACEHOLDER">
-                    <h3><a target="_blank" href="https://bioconductor.org/packages/release/bioc/html/limma.html">PLACEHOLDER</a></h3>
+                    <h3><a target="_blank" href="https://bioconductor.org/packages/release/bioc/html/limma.html">Em breve...</a></h3>
                     <p>. . .</p>
                 </div>
                 <div class="tool">
                     <img src="src/analysis.png" alt="PLACEHOLDER">
-                    <h3><a target="_blank" href="https://bioconductor.org/packages/release/bioc/html/limma.html">PLACEHOLDER</a></h3>
+                    <h3><a target="_blank" href="https://bioconductor.org/packages/release/bioc/html/limma.html">Em breve...</a></h3>
                     <p>. . .</p>
                 </div>
                 <div class="tool">
                     <img src="src/analysis.png" alt="PLACEHOLDER">
-                    <h3><a target="_blank" href="https://bioconductor.org/packages/release/bioc/html/limma.html">PLACEHOLDER</a></h3>
+                    <h3><a target="_blank" href="https://bioconductor.org/packages/release/bioc/html/limma.html">Em breve...</a></h3>
                     <p>. . .</p>
                 </div>
             </div>
@@ -63,7 +67,7 @@
 
     <footer>
         <div class="container">
-            <a target="_blank" href="https://propes.ufabc.edu.br/a-propes/nucleos-estrategicos/interagro" id="icon">Desenvolvido para o InterAGRO - UFABC</a>
+            <a class="icon" target="_blank" href="https://propes.ufabc.edu.br/a-propes/nucleos-estrategicos/interagro" id="icon">Desenvolvido para o InterAGRO - UFABC</a>
             <p>&copy; 2024</p>
         </div>
     </footer>

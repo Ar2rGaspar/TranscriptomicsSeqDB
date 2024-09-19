@@ -10,14 +10,15 @@
 <body>
     <header>
         <div class="container">
+            <a href="index.html"><img src="src/logo.png" alt="BioLogo" id="logo"></a>
             <h1><a href="index.html">TranscriptomicsSeqDB</a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Página Inicial</a></li>
                     <li><a href="searchpage.html">Banco de Dados</a></li>
                     <li><a href="tools.html">Ferramentas</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -87,11 +88,11 @@
     </section>
 
     <div class="result-buttons">
-        <button id="btn-20-results">20 resultados</button>
-        <button id="btn-100-results">100 resultados</button>
-        <button id="btn-500-results">500 resultados</button>
-        <button id="previous-page">&lArr;</button>
-        <button id="next-page">&rArr;</button>
+        <button class="btn-results" data-results="20">20 resultados</button>
+        <button class="btn-results" data-results="100">100 resultados</button>
+        <button class="btn-results" data-results="500">500 resultados</button>
+        <button class="previous-page">&lArr;</button>
+        <button class="next-page">&rArr;</button>
       </div>
 
     <section id="results">
@@ -103,16 +104,16 @@
     </section>
 
     <div class="result-buttons">
-        <button id="btn-20-results">20 resultados</button>
-        <button id="btn-100-results">100 resultados</button>
-        <button id="btn-500-results">500 resultados</button>
-        <button id="previous-page">&lArr;</button>
-        <button id="next-page">&rArr;</button>
+        <button class="btn-results" data-results="20">20 resultados</button>
+        <button class="btn-results" data-results="100">100 resultados</button>
+        <button class="btn-results" data-results="500">500 resultados</button>
+        <button class="previous-page">&lArr;</button>
+        <button class="next-page">&rArr;</button>
       </div>
 
     <footer>
         <div class="container">
-            <a target="_blank" href="https://propes.ufabc.edu.br/a-propes/nucleos-estrategicos/interagro" id="icon">Desenvolvido para o InterAGRO - UFABC</a>
+            <a class="icon" target="_blank" href="https://propes.ufabc.edu.br/a-propes/nucleos-estrategicos/interagro" id="icon">Desenvolvido para o InterAGRO - UFABC</a>
             <p>&copy; 2024</p>
         </div>
     </footer>
