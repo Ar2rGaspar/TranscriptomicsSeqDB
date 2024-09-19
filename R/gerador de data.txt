@@ -1,0 +1,33 @@
+library(dplyr)
+
+generate_gene_names <- function(num_genes) {
+  letters <- c(LETTERS, sapply(LETTERS, function(x) paste0(x, LETTERS)))
+  if (num_genes > length(letters)) {
+    stop("Number of genes exceeds the naming capacity of the function.")
+  }
+  return(letters[1:num_genes])
+}
+
+generate_random_data <- function(num_genes, num_samples) {
+  genes <- generate_gene_names(num_genes)
+  df <- data.frame(Gene = genes)
+  
+  for (i in 1:num_samples) {
+    control_col <- paste0("Sample", i, "_Control")
+    treatment_col <- paste0("Sample", i, "_Treatment")
+    
+    df[[control_col]] <- sample(80:200, num_genes, replace = TRUE)
+    df[[treatment_col]] <- sample(100:400, num_genes, replace = TRUE)
+  }
+  
+  return(df)
+}
+
+num_genes <- 500
+num_samples <- 500
+
+random_data <- generate_random_data(num_genes, num_samples)
+
+write.csv(random_data, "bigexemplo2.csv", row.names = FALSE)
+
+head(random_data)

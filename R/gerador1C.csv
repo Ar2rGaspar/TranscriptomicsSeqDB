@@ -1,0 +1,6 @@
+Gene,Sample1_Control,Sample2_Control,Sample3_Control,Sample1_Treatment,Sample2_Treatment,Sample3_Treatment
+GeneA,100,110,95,200,210,190
+GeneB,150,140,160,300,310,290
+GeneC,80,75,85,180,170,190
+GeneD,200,190,210,400,410,390
+GeneE,120,130,115,220,230,210

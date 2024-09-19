@@ -1,0 +1,26 @@
+library(data.table)
+
+add_unique_identifier <- function(input_file, output_file) {
+  df <- fread(input_file, fill = TRUE, sep = ",", header = TRUE, quote = "")
+  
+  if ("V1" %in% colnames(df)) {
+    setnames(df, old = "V1", new = "GeneId")
+  }
+  
+  df[, UniqueID := .I]
+  setcolorder(df, c("UniqueID", setdiff(names(df), "UniqueID")))
+
+  if ("V7" %in% colnames(df)) {
+    df[, V7 := NULL]
+  }
+
+  df[, Dummy := ""]
+  
+  fwrite(df, output_file, quote = FALSE, col.names = FALSE, sep = ",")
+  
+  print("Unique identifier column added and new file saved.")
+}
+
+input_file <- "TESTE3.csv"
+output_file <- "TESTE4.csv"
+add_unique_identifier(input_file, output_file)
