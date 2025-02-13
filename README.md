@@ -1,5 +1,5 @@
 # TranscriptomicsSeqDB
-Modelo de teste do TranscriptomicsSeqDB
+Modelo de teste do TranscriptomicsSeqDB (desatualizado, essa versão é de 02/2024)
 <br>
 https://ar2rgaspar.github.io/TranscriptomicsSeqDB/
 
